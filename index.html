@@ -17,70 +17,304 @@
   mapboxgl.accessToken = 'pk.eyJ1IjoiYXJvc2VtZW5hIiwiYSI6ImNtOXhjajcxMzBwOG0ya3BwZnF0ZW1xZnUifQ.sxwasp_unopkdy_4jpzGLQ';
 
   const geojson = {
-    "type": "FeatureCollection",
-    "features": [
-      {
-        "type": "Feature",
-        "geometry": {"type": "Point", "coordinates": [-74.85665309214839, 5.887834354521789]},
-        "properties": {"title": "RioClaro", "url": "https://arosemena-portfolio.squarespace.com/portfolio-2-1/project-three-8zgh7-absaw"}
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.85665309214839,
+          5.887834354521789
+        ]
       },
-      {
-        "type": "Feature",
-        "geometry": {"type": "Point", "coordinates": [-74.8594071667184, 5.884638208584613]},
-        "properties": {"title": "Indio", "url": "https://arosemena-portfolio.squarespace.com/portfolio-2-1/project-three-sng7y-2d6ky"}
-      },
-      {
-        "type": "Feature",
-        "geometry": {"type": "Point", "coordinates": [-74.83388500888657, 5.82923051896804]},
-        "properties": {"title": "Gruta", "url": "https://arosemena-portfolio.squarespace.com/portfolio-2-1/project-three-sng7y-2d6ky"}
-      },
-      {
-        "type": "Feature",
-        "geometry": {"type": "Point", "coordinates": [-74.83863100091527, 5.788188720353955]},
-        "properties": {"title": "Caiman", "url": "https://arosemena-portfolio.squarespace.com/portfolio-2-1/project-three-sng7y-2d6ky"}
-      },
-      {
-        "type": "Feature",
-        "geometry": {"type": "Point", "coordinates": [-74.80128485634053, 6.077536916090567]},
-        "properties": {"title": "Buho", "url": "https://arosemena-portfolio.squarespace.com/portfolio-2-1/project-three-sng7y-2d6ky"}
-      },
-      {
-        "type": "Feature",
-        "geometry": {"type": "Point", "coordinates": [-74.80942028937636, 6.034659759212882]},
-        "properties": {"title": "Caritas", "url": "https://arosemena-portfolio.squarespace.com/portfolio-2-1/project-three-sng7y-2d6ky"}
-      },
-      {
-        "type": "Feature",
-        "geometry": {"type": "Point", "coordinates": [-73.82285158238034, 6.076063097104139]},
-        "properties": {"title": "Peñon", "url": "https://arosemena-portfolio.squarespace.com/portfolio-2-1"}
-      },
-      {
-        "type": "Feature",
-        "geometry": {"type": "Point", "coordinates": [-78.24137679832728, 8.034911593858046]},
-        "properties": {"title": "Jaque", "url": "https://arosemena-portfolio.squarespace.com/portfolio-2-1"}
-      },
-      {
-        "type": "Feature",
-        "geometry": {"type": "Point", "coordinates": [-69.49847351963966, -1.312109623524591]},
-        "properties": {"title": "Pedrera", "url": "https://arosemena-portfolio.squarespace.com/portfolio-2-1"}
-      },
-      {
-        "type": "Feature",
-        "geometry": {"type": "Point", "coordinates": [-73.8039275918112, 10.469029787273008]},
-        "properties": {"title": "SierraNevada", "url": "https://arosemena-portfolio.squarespace.com/portfolio-2-1"}
-      },
-      {
-        "type": "Feature",
-        "geometry": {"type": "Point", "coordinates": [-72.56376962537048, -0.306056972667243]},
-        "properties": {"title": "Chiribiquete", "url": "https://arosemena-portfolio.squarespace.com/portfolio-2-1"}
-      },
-      {
-        "type": "Feature",
-        "geometry": {"type": "Point", "coordinates": [-75.32487604121965, 2.991869156126442]},
-        "properties": {"title": "MagdalenaBasin", "url": "https://arosemena-portfolio.squarespace.com/portfolio-2-1"}
+      "properties": {
+        "title": "RioClaro",
+        "url": "https://arosemena-portfolio.squarespace.com/portfolio-2-1/project-three-8zgh7-absaw"
       }
-    ]
-  };
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.8594071667184,
+          5.884638208584613
+        ]
+      },
+      "properties": {
+        "title": "Indio",
+        "url": "https://arosemena-portfolio.squarespace.com/portfolio-2-1/project-three-sng7y-2d6ky"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.83388500888657,
+          5.82923051896804
+        ]
+      },
+      "properties": {
+        "title": "Gruta",
+        "url": "https://arosemena-portfolio.squarespace.com/portfolio-2-1/project-three-sng7y-2d6ky"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.83863100091527,
+          5.788188720353955
+        ]
+      },
+      "properties": {
+        "title": "Caiman",
+        "url": "https://arosemena-portfolio.squarespace.com/portfolio-2-1/project-three-sng7y-2d6ky"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.80128485634053,
+          6.077536916090567
+        ]
+      },
+      "properties": {
+        "title": "Buho",
+        "url": "https://arosemena-portfolio.squarespace.com/portfolio-2-1/project-three-sng7y-2d6ky"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.80942028937636,
+          6.034659759212882
+        ]
+      },
+      "properties": {
+        "title": "Caritas",
+        "url": "https://arosemena-portfolio.squarespace.com/portfolio-2-1/project-three-sng7y-2d6ky"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.82285158238034,
+          6.076063097104139
+        ]
+      },
+      "properties": {
+        "title": "Pe\u00f1on",
+        "url": "https://arosemena-portfolio.squarespace.com/portfolio-2-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.24137679832728,
+          8.034911593858046
+        ]
+      },
+      "properties": {
+        "title": "Jaque",
+        "url": "https://arosemena-portfolio.squarespace.com/portfolio-2-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.49847351963966,
+          -1.312109623524591
+        ]
+      },
+      "properties": {
+        "title": "Pedrera",
+        "url": "https://arosemena-portfolio.squarespace.com/portfolio-2-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8039275918112,
+          10.469029787273008
+        ]
+      },
+      "properties": {
+        "title": "SierraNevada",
+        "url": "https://arosemena-portfolio.squarespace.com/portfolio-2-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.56376962537048,
+          -0.306056972667243
+        ]
+      },
+      "properties": {
+        "title": "Chiribiquete",
+        "url": "https://arosemena-portfolio.squarespace.com/portfolio-2-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.32487604121965,
+          2.991869156126442
+        ]
+      },
+      "properties": {
+        "title": "MagdalenaBasin",
+        "url": "https://arosemena-portfolio.squarespace.com/systems-thinking-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.95539024560713,
+          12.098201529775
+        ]
+      },
+      "properties": {
+        "title": "Guajira",
+        "url": "https://arosemena-portfolio.squarespace.com/portfolio-2/project-one-ephnc-8gmgm"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.50049233884147,
+          17.571073940082087
+        ]
+      },
+      "properties": {
+        "title": "Calakmul",
+        "url": "https://arosemena-portfolio.squarespace.com/portfolio-2-1/project-one-ephnc-ntykm"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.99825303526211,
+          18.540341583096808
+        ]
+      },
+      "properties": {
+        "title": "Oaxaca",
+        "url": "https://arosemena-portfolio.squarespace.com/portfolio-2/project-one-ephnc-8gmgm"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.08949357053238,
+          19.335768758085123
+        ]
+      },
+      "properties": {
+        "title": "Tlaxcala",
+        "url": "https://arosemena-portfolio.squarespace.com/portfolio-2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.39870827756312,
+          18.739552543198716
+        ]
+      },
+      "properties": {
+        "title": "Puebla",
+        "url": "https://arosemena-portfolio.squarespace.com/portfolio-2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.71395336151069,
+          17.404345584612923
+        ]
+      },
+      "properties": {
+        "title": "Guerrero",
+        "url": "https://arosemena-portfolio.squarespace.com/portfolio-2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.98008963504219,
+          19.258753194898233
+        ]
+      },
+      "properties": {
+        "title": "Veracruz",
+        "url": "https://arosemena-portfolio.squarespace.com/portfolio-2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.90443416526355,
+          19.364767275334398
+        ]
+      },
+      "properties": {
+        "title": "MexicDF",
+        "url": "https://arosemena-portfolio.squarespace.com/portfolio-2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.95566901917643,
+          18.50085783418807
+        ]
+      },
+      "properties": {
+        "title": "Oaxaca",
+        "url": "https://arosemena-portfolio.squarespace.com/portfolio-2-1/project-one-ephnc-ntykm"
+      }
+    }
+  ]
+};
 
   const map = new mapboxgl.Map({
     container: 'map',
